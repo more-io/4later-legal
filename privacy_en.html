@@ -24,6 +24,8 @@
   nav { margin-top: 1rem; font-size: .875rem; }
   nav a { margin-right: 1rem; }
   p { margin: 0 0 .9rem; }
+  .doc-title { font-size: 1.125rem; font-weight: 600; margin-bottom: 1.2rem; }
+  h2 { font-size: 1.125rem; line-height: 1.35; margin: 1.8rem 0 .6rem; }
   a { color: #0060df; }
   footer {
     margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid;
@@ -37,11 +39,11 @@
 <p class="meta">4later</p>
 <nav><strong>Privacy Policy</strong> <a href="terms_en.html">Terms and Conditions</a> <a href="licenses_en.html">Third-Party Licenses</a> <a href="imprint_en.html">Imprint</a> <a href="privacy_de.html">DE</a></nav>
 </header>
-<p>Privacy Policy of the App 4later for iOS and iPadOS</p>
+<p class="doc-title">Privacy Policy of the App 4later for iOS and iPadOS</p>
 
 <p>Last updated: August 5, 2026 - Version 2.6</p>
 
-<p>1. Name and Address of the Data Controller</p>
+<h2>1. Name and Address of the Data Controller</h2>
 
 <p>The data controller within the meaning of the General Data Protection Regulation (GDPR) and other national data protection laws of the member states of the European Union, as well as other data protection regulations, is:</p>
 
@@ -54,14 +56,14 @@
 <p>For data inquiries, please contact support@4laterapp.com.</p>
 
 
-<p>2. Information on the Use of the App</p>
+<h2>2. Information on the Use of the App</h2>
 
 <p>2.1 Sign-in with Apple or Google Account: Using the App requires signing in with an Apple account or a Google account. Name and email address are stored (with Apple Sign-In optionally via Private Relay, without a plaintext email address). There is no email/password sign-in; 4later does not process any passwords.</p>
 
 <p>2.2 Legacy accounts without sign-in: During an earlier testing phase, accounts could be created without signing in (anonymously). Such legacy accounts remain usable and can be linked to an Apple or Google account at any time (all data is preserved). New anonymous accounts have not been created since July 30, 2026.</p>
 
 
-<p>3. Data Storage and Security</p>
+<h2>3. Data Storage and Security</h2>
 
 <p>All data collected through the use of the App is processed and stored on Google Cloud infrastructure within the European Union:</p>
 
@@ -78,7 +80,7 @@
 <p>Exceptions with third-country transfer: Push notifications are delivered via Apple Push Notification Service (APNS, USA) and Google Firebase Cloud Messaging. Apple processes this data under the EU-US Data Privacy Framework. Support requests via Freshdesk are processed in the USA and India (see Section 7).</p>
 
 
-<p>4. Automatically Collected Data</p>
+<h2>4. Automatically Collected Data</h2>
 
 <p>Our App uses the following Google Firebase services to provide core functionality:</p>
 
@@ -100,7 +102,7 @@
 <p>The App does NOT use analytics or tracking services. We do not use Firebase Analytics, Crashlytics, advertising IDs, or browser fingerprinting. No location data, contact data, or health data is collected.</p>
 
 
-<p>5. Storage Duration and Deletion</p>
+<h2>5. Storage Duration and Deletion</h2>
 
 <p>Your personal data will be stored for as long as is necessary for the provision of our services. You have the option to delete your user account and all associated data at any time via the App settings.</p>
 
@@ -109,7 +111,7 @@
 <p>If you uninstall the App without first deleting your user account, your data will remain stored in our cloud database (Google Firestore and Cloud Storage).</p>
 
 
-<p>6. Specific Data Protection Features of 4later</p>
+<h2>6. Specific Data Protection Features of 4later</h2>
 
 <p>6.1 Data Transmission and Security:</p>
 <p>All data transmissions between the App and our server services are TLS-encrypted.</p>
@@ -138,7 +140,7 @@
 <p>- Deletion of shared topics: If the owner deletes or archives a shared topic, or deletes their account, sharing ends; the topic and its contents are deleted according to the rules in Section 5 and are no longer accessible to any member.</p>
 <p>- Reporting content: Members of a shared topic can report an item they consider objectionable (reasons: objectionable content, harassment, other, each with optional free text). We then store your user identifier, the topic owner's user identifier, the identifiers of the topic and the item, the selected reason, your free text, and the time and processing status — on our servers (Firebase, europe-west1). The reported person does not learn who filed the report. Reports are deliberately NOT subject to an automatic deletion period, so that a case remains traceable during and after handling; they are deleted once they are no longer required for handling and any evidentiary purposes. For handling, a notification is posted to an internal channel of the 4later team (Slack, see Section 7). The legal basis is Art. 6(1)(f) GDPR (legitimate interest in preventing abuse and in meeting platform requirements for user-generated content). [REVIEW LEGAL: review the retention of abuse reports (no fixed period) and the duty to inform the reported person (Art. 14 GDPR).]</p>
 
-<p>7. Integration of Third-Party Services and APIs</p>
+<h2>7. Integration of Third-Party Services and APIs</h2>
 
 <p>Our App integrates various services to provide enhanced functionality:</p>
 
@@ -160,25 +162,25 @@
 
 <p>Apple services: The App uses the following Apple services, processed under the Apple Developer DPA and the EU-US Data Privacy Framework:</p>
 
-<p><span>  </span>– Apple Sign-In: Optional authentication via Apple ID (optionally with Private Relay for the email address).</p>
-<p><span>  </span>– Apple Push Notification Service (APNS): Delivery of push notifications (device tokens, USA).</p>
-<p><span>  </span>– App Attest / DeviceCheck: Device attestation for Firebase App Check (no personal data).</p>
-<p><span>  </span>– StoreKit: Management of in-app purchases and subscriptions (transaction IDs).</p>
-<p><span>  </span>– EventKit: Optional local synchronization of reminders with the Apple Calendar (happens exclusively on-device; no server transfer by us).</p>
+<p>– Apple Sign-In: Optional authentication via Apple ID (optionally with Private Relay for the email address).</p>
+<p>– Apple Push Notification Service (APNS): Delivery of push notifications (device tokens, USA).</p>
+<p>– App Attest / DeviceCheck: Device attestation for Firebase App Check (no personal data).</p>
+<p>– StoreKit: Management of in-app purchases and subscriptions (transaction IDs).</p>
+<p>– EventKit: Optional local synchronization of reminders with the Apple Calendar (happens exclusively on-device; no server transfer by us).</p>
 
 <p>Freshdesk (Freshworks Inc., USA): Optional support ticket system accessible via a link in the App settings. Upon use, Freshworks processes your submitted support requests (email address, name, ticket content) in the USA and India. The third-country transfer is secured by Standard Contractual Clauses (SCCs). Certifications: ISO 27001, SOC 2 Type II. Further information in the Freshworks privacy policy at https://www.freshworks.com/privacy/. Data Protection Officer: dpo@freshworks.com.</p>
 
 <p>Data collected through these APIs is subject to the respective privacy policies of the third-party providers. For more information, please consult the privacy policies of the respective third-party providers.</p>
 
 
-<p>8. Your Rights</p>
+<h2>8. Your Rights</h2>
 
 <p>You have the right to access (Art. 15 GDPR), rectification (Art. 16 GDPR), deletion (Art. 17 GDPR), restriction of processing (Art. 18 GDPR), data portability (Art. 20 GDPR), and to object to processing (Art. 21 GDPR). To exercise your rights, please contact support@4laterapp.com.</p>
 
 <p>Furthermore, you have the right to lodge a complaint with a data protection supervisory authority if you believe that the processing of your personal data violates the GDPR. The supervisory authority responsible for us is the Bavarian State Office for Data Protection Supervision (BayLDA), Promenade 27, 91522 Ansbach, Germany.</p>
 
 
-<p>9. Legal Basis for Processing</p>
+<h2>9. Legal Basis for Processing</h2>
 
 <p>The processing of personal data is based on Art. 6(1) GDPR:</p>
 <p>(a) consent (e.g. for calendar access or sign-in with an Apple/Google account)</p>
@@ -186,12 +188,12 @@
 <p>(f) legitimate interest (e.g. ensuring technical functionality, AI content analysis, abuse prevention)</p>
 
 
-<p>10. Terms and Conditions Reference</p>
+<h2>10. Terms and Conditions Reference</h2>
 
 <p>This Privacy Policy is part of our Terms and Conditions, which set out the legal basis for the use of our App. Please read them carefully to inform yourself about your rights and obligations when using our services.</p>
 
 
-<p>11. Questions and Suggestions</p>
+<h2>11. Questions and Suggestions</h2>
 
 <p>If you have any questions or suggestions regarding data protection, we welcome your correspondence.</p>
 

@@ -24,6 +24,8 @@
   nav { margin-top: 1rem; font-size: .875rem; }
   nav a { margin-right: 1rem; }
   p { margin: 0 0 .9rem; }
+  .doc-title { font-size: 1.125rem; font-weight: 600; margin-bottom: 1.2rem; }
+  h2 { font-size: 1.125rem; line-height: 1.35; margin: 1.8rem 0 .6rem; }
   a { color: #0060df; }
   footer {
     margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid;
@@ -37,11 +39,11 @@
 <p class="meta">4later</p>
 <nav><strong>Datenschutzerklärung</strong> <a href="terms_de.html">Allgemeine Geschäftsbedingungen</a> <a href="licenses_de.html">Drittanbieter-Lizenzen</a> <a href="imprint_de.html">Impressum</a> <a href="privacy_en.html">EN</a></nav>
 </header>
-<p>Datenschutzerklärung der App 4later für iOS und iPadOS</p>
+<p class="doc-title">Datenschutzerklärung der App 4later für iOS und iPadOS</p>
 
 <p>Stand: 5. August 2026 - Version 2.6</p>
 
-<p>1. Name und Anschrift des Verantwortlichen</p>
+<h2>1. Name und Anschrift des Verantwortlichen</h2>
 
 <p>Der Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze der Mitgliedsstaaten der Europäischen Union sowie sonstiger datenschutzrechtlicher Bestimmungen ist:</p>
 
@@ -54,14 +56,14 @@
 <p>Für Datenauskünfte wenden Sie sich bitte an die E-Mail-Adresse support@4laterapp.com.</p>
 
 
-<p>2. Hinweise zur Nutzung der App</p>
+<h2>2. Hinweise zur Nutzung der App</h2>
 
 <p>2.1 Anmeldung mit Apple- oder Google-Account: Die Nutzung der App setzt eine Anmeldung mit einem Apple-Account oder einem Google-Account voraus. Dabei werden Name und E-Mail-Adresse gespeichert (bei Apple Sign-In optional per Private Relay ohne Klartext-E-Mail-Adresse). Eine Anmeldung mit E-Mail und Passwort existiert nicht; 4later verarbeitet keine Passwörter.</p>
 
 <p>2.2 Bestandskonten ohne Anmeldung: In einer früheren Testphase konnten Konten ohne Anmeldung (anonym) erstellt werden. Solche Bestandskonten bleiben weiterhin nutzbar und können jederzeit mit einem Apple- oder Google-Account verknüpft werden (dieselben Daten bleiben erhalten). Neue anonyme Konten werden seit dem 30. Juli 2026 nicht mehr erstellt.</p>
 
 
-<p>3. Datenspeicherung und -sicherung</p>
+<h2>3. Datenspeicherung und -sicherung</h2>
 
 <p>Alle Daten, die durch die Nutzung der App erhoben werden, werden in der Europäischen Union auf Google Cloud-Infrastruktur verarbeitet und gespeichert:</p>
 
@@ -78,7 +80,7 @@
 <p>Ausnahmen mit Drittlandtransfer: Push-Benachrichtigungen werden über den Apple Push Notification Service (APNS, USA) und Google Firebase Cloud Messaging übertragen. Apple verarbeitet diese Daten unter dem EU-US Data Privacy Framework. Support-Anfragen über Freshdesk werden in den USA und Indien verarbeitet (siehe Abschnitt 7).</p>
 
 
-<p>4. Automatisch erfasste Daten</p>
+<h2>4. Automatisch erfasste Daten</h2>
 
 <p>Unsere App verwendet folgende Google-Firebase-Dienste zur Bereitstellung der Kernfunktionalität:</p>
 
@@ -100,7 +102,7 @@
 <p>Die App nutzt KEINE Analytics- oder Tracking-Dienste. Wir verwenden kein Firebase Analytics, kein Crashlytics, keine Werbe-IDs und kein Browser-Fingerprinting. Es werden keine Standortdaten, Kontaktdaten oder Gesundheitsdaten erhoben.</p>
 
 
-<p>5. Speicherdauer und Löschung</p>
+<h2>5. Speicherdauer und Löschung</h2>
 
 <p>Ihre personenbezogenen Daten werden so lange gespeichert, wie dies für die Erbringung unserer Dienste erforderlich ist. Sie haben die Möglichkeit, Ihr Benutzerkonto und alle damit verbundenen Daten jederzeit manuell über die App-Einstellungen zu löschen.</p>
 
@@ -109,7 +111,7 @@
 <p>Falls Sie die App deinstallieren, ohne Ihr Benutzerkonto zuvor zu löschen, bleiben Ihre Daten in unserer Cloud-Datenbank (Google Firestore und Cloud Storage) gespeichert.</p>
 
 
-<p>6. Besonderheiten zum Datenschutz bei 4later</p>
+<h2>6. Besonderheiten zum Datenschutz bei 4later</h2>
 
 <p>6.1 Datenübertragung und -sicherung:</p>
 <p>Alle Datenübertragungen zwischen der App und den Server-Diensten sind TLS-verschlüsselt.</p>
@@ -138,7 +140,7 @@
 <p>- Löschung geteilter Themen: Löscht oder archiviert der Besitzer ein geteiltes Thema oder löscht er sein Konto, endet das Teilen; das Thema und seine Inhalte werden nach den Regeln in Abschnitt 5 gelöscht und sind für alle Mitglieder nicht mehr zugänglich.</p>
 <p>- Meldung von Inhalten: Mitglieder eines geteilten Themas können einen Eintrag melden, den sie für unzulässig halten (Meldegründe: anstößiger Inhalt, Belästigung, Sonstiges, jeweils mit optionalem Freitext). Gespeichert werden dabei Ihre Nutzerkennung, die Nutzerkennung des Themenbesitzers, die Kennungen von Thema und Eintrag, der gewählte Meldegrund, Ihr Freitext sowie Zeitpunkt und Bearbeitungsstand – auf unseren Servern (Firebase, europe-west1). Die gemeldete Person erfährt nicht, wer die Meldung abgegeben hat. Meldungen unterliegen bewusst KEINER automatischen Löschfrist, damit ein Vorgang während und nach der Bearbeitung nachvollziehbar bleibt; sie werden gelöscht, sobald sie für die Bearbeitung und etwaige Nachweiszwecke nicht mehr erforderlich sind. Zur Bearbeitung wird eine Benachrichtigung in einen internen Kanal des 4later-Teams gestellt (Slack, siehe Abschnitt 7). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Verhinderung von Missbrauch und an der Erfüllung der Plattformvorgaben für nutzergenerierte Inhalte). [REVIEW LEGAL: Aufbewahrungsdauer von Missbrauchsmeldungen (keine feste Frist) und Informationspflicht gegenüber der gemeldeten Person (Art. 14 DSGVO) prüfen.]</p>
 
-<p>7. Integration von Drittanbietern und APIs</p>
+<h2>7. Integration von Drittanbietern und APIs</h2>
 
 <p>Unsere App integriert verschiedene Dienste, um erweiterte Funktionen bereitzustellen:</p>
 
@@ -160,25 +162,25 @@
 
 <p>Apple-Dienste: Die App nutzt folgende Apple-Dienste, die unter dem Apple Developer DPA und dem EU-US Data Privacy Framework verarbeitet werden:</p>
 
-<p><span>  </span>– Apple Sign-In: Optionale Authentifizierung via Apple-ID (optional mit Private Relay für die E-Mail-Adresse).</p>
-<p><span>  </span>– Apple Push Notification Service (APNS): Zustellung von Push-Benachrichtigungen (Device-Tokens, USA).</p>
-<p><span>  </span>– App Attest / DeviceCheck: Geräte-Attestation für Firebase App Check (keine personenbezogenen Daten).</p>
-<p><span>  </span>– StoreKit: Verwaltung von In-App-Käufen und Abonnements (Transaktions-IDs).</p>
-<p><span>  </span>– EventKit: Optionale lokale Synchronisierung von Erinnerungen mit dem Apple Kalender (erfolgt ausschließlich auf dem Gerät, keine Server-Übertragung durch uns).</p>
+<p>– Apple Sign-In: Optionale Authentifizierung via Apple-ID (optional mit Private Relay für die E-Mail-Adresse).</p>
+<p>– Apple Push Notification Service (APNS): Zustellung von Push-Benachrichtigungen (Device-Tokens, USA).</p>
+<p>– App Attest / DeviceCheck: Geräte-Attestation für Firebase App Check (keine personenbezogenen Daten).</p>
+<p>– StoreKit: Verwaltung von In-App-Käufen und Abonnements (Transaktions-IDs).</p>
+<p>– EventKit: Optionale lokale Synchronisierung von Erinnerungen mit dem Apple Kalender (erfolgt ausschließlich auf dem Gerät, keine Server-Übertragung durch uns).</p>
 
 <p>Freshdesk (Freshworks Inc., USA): Optionales Support-Ticket-System, erreichbar über einen Link in den App-Einstellungen. Bei Nutzung verarbeitet Freshworks Ihre eingegebenen Support-Anfragen (E-Mail-Adresse, Name, Ticket-Inhalt) in den USA und Indien. Der Drittlandtransfer ist durch Standard-Vertragsklauseln (SCCs) abgesichert. Zertifizierungen: ISO 27001, SOC 2 Type II. Weitere Informationen in der Datenschutzerklärung von Freshworks unter https://www.freshworks.com/privacy/. Datenschutzbeauftragter: dpo@freshworks.com.</p>
 
 <p>Die Daten, die durch diese APIs erhoben werden, unterliegen den jeweiligen Datenschutzrichtlinien der Drittanbieter. Für weitere Informationen konsultieren Sie bitte die Datenschutzrichtlinien der jeweiligen Drittanbieter.</p>
 
 
-<p>8. Ihre Rechte</p>
+<h2>8. Ihre Rechte</h2>
 
 <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenportabilität (Art. 20 DSGVO) und Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Zur Ausübung Ihrer Rechte wenden Sie sich bitte an support@4laterapp.com.</p>
 
 <p>Darüber hinaus haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt. Die für uns zuständige Aufsichtsbehörde ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA), Promenade 27, 91522 Ansbach.</p>
 
 
-<p>9. Rechtsgrundlagen der Verarbeitung</p>
+<h2>9. Rechtsgrundlagen der Verarbeitung</h2>
 
 <p>Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage von Art. 6 Abs. 1 DSGVO:</p>
 <p>(a) Einwilligung (z. B. bei Kalenderzugriff oder Anmeldung mit Apple-/Google-Account)</p>
@@ -186,12 +188,12 @@
 <p>(f) berechtigtes Interesse (z. B. Sicherstellung der technischen Funktionsfähigkeit, KI-Inhaltsanalyse, Missbrauchsprävention)</p>
 
 
-<p>10. AGB-Referenz</p>
+<h2>10. AGB-Referenz</h2>
 
 <p>Diese Datenschutzerklärung ist Teil unserer Allgemeinen Geschäftsbedingungen (AGB), die die rechtlichen Grundlagen für die Nutzung unserer App darstellen. Bitte lesen Sie diese sorgfältig durch, um sich über Ihre Rechte und Pflichten bei der Nutzung unserer Dienste zu informieren.</p>
 
 
-<p>11. Fragen und Anregungen</p>
+<h2>11. Fragen und Anregungen</h2>
 
 <p>Wenn Sie Fragen oder Anregungen zum Datenschutz haben, freuen wir uns über Ihre Zusendung.</p>
 
