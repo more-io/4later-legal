@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6472343223">
+<title>Privacy Policy — 4later</title>
+<meta name="description" content="Privacy Policy for the 4later app.">
+<style>
+  :root { color-scheme: light dark; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 42rem;
+    font: 1rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: #1c1c1e; background: #fff;
+    overflow-wrap: break-word;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5e7; background: #1c1c1e; }
+    a { color: #6ba6ff; }
+  }
+  header { margin-bottom: 2rem; }
+  h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 .25rem; }
+  .meta { font-size: .875rem; opacity: .7; margin: 0; }
+  nav { margin-top: 1rem; font-size: .875rem; }
+  nav a { margin-right: 1rem; }
+  p { margin: 0 0 .9rem; }
+  .doc-title { font-size: 1.125rem; font-weight: 600; margin-bottom: 1.2rem; }
+  h2 { font-size: 1.125rem; line-height: 1.35; margin: 1.8rem 0 .6rem; }
+  a { color: #0060df; }
+  footer {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid;
+    border-color: rgba(128,128,128,.3); font-size: .875rem; opacity: .8;
+  }
+</style>
+</head>
+<body>
+<header>
+<h1>Privacy Policy</h1>
+<p class="meta">4later · 3.17</p>
+<p class="meta applies">Applies from: Server 2026-11-05</p>
+<nav><strong>Archived version 3.17. Current version: <a href="privacy_en.html">Privacy Policy</a></strong> <a href="versions.html">All versions</a></nav>
+</header>
+<p class="doc-title">Privacy Policy of the App 4later for iOS and iPadOS</p>
+
+<p>Last updated: November 5, 2026 - Version 3.17</p>
+
+<h2>1. Name and Address of the Data Controller</h2>
+
+<p>The data controller within the meaning of the General Data Protection Regulation (GDPR) and other national data protection laws of the member states of the European Union, as well as other data protection regulations, is:</p>
+
+<p>4later UG (haftungsbeschränkt)</p>
+<p>represented by Managing Director Tobias Stöger</p>
+<p>Friedrich-Dürr-Straße 16</p>
+<p>85221 Dachau</p>
+<p>Germany</p>
+
+<p>For data inquiries, please contact support@4laterapp.com.</p>
+
+<p>Technical terms used in this policy (for example Cloud Function, token, LLM) are briefly explained in brackets where they first appear and collected in section 12 "Glossary".</p>
+
+
+<h2>2. Information on the Use of the App</h2>
+
+<p>2.1 Sign-in with Apple or Google Account: Using the App requires signing in with an Apple account or a Google account. Name and email address are stored (with Apple Sign-In optionally via Private Relay, without a plaintext email address). There is no email/password sign-in; 4later does not process any passwords.</p>
+
+<p>2.2 Legacy accounts without sign-in: During an earlier testing phase, accounts could be created without signing in (anonymously). Such legacy accounts remain usable and can be linked to an Apple or Google account at any time (all data is preserved). New anonymous accounts have not been created since July 30, 2026.</p>
+
+
+<h2>3. Data Storage and Security</h2>
+
+<p>All data collected through the use of the App is processed and stored on Google Cloud infrastructure within the European Union:</p>
+
+<p>Firestore database (our database at Google Firebase): EU multi-region, i.e. mirrored at several locations within the EU (eur3, Belgium and Netherlands)</p>
+<p>Cloud Storage (files, attachments): EU multi-region</p>
+<p>Cloud Functions (programs that run on our servers at Google, not on your device; server-side processing): europe-west1 (Belgium)</p>
+<p>Google Gemini (AI analysis): EU multi-region; when it is at capacity, europe-west3 (Frankfurt, Germany) as a fallback</p>
+<p>Screenshot service (our own infrastructure): europe-west1 (Belgium)</p>
+
+<p>Personal Data: When signing in via Apple or Google, name and email address are stored and used for synchronization across multiple devices. For anonymous legacy accounts (Section 2.2), no names or email addresses are collected.</p>
+
+<p>All data transmissions between the App, Google services, and our own services are encrypted using Transport Layer Security (TLS). Data is encrypted at rest with AES-256 (Google-managed keys).</p>
+
+<p>Exceptions with third-country transfer: Push notifications are delivered via Apple Push Notification Service (APNS, USA) and Google Firebase Cloud Messaging. Apple processes this data under the EU-US Data Privacy Framework. Support requests via Freshdesk are processed in the USA and India (see Section 7). If you connect your Dropbox account for the folder import, our server exchanges data with Dropbox, Inc. (USA) for this purpose (see Sections 6.9 and 7).</p>
+
+
+<h2>4. Automatically Collected Data</h2>
+
+<p>Our App uses the following Google Firebase services to provide core functionality:</p>
+
+<p>Firebase Authentication: User account management (UID, optional email/name)</p>
+<p>Cloud Firestore: Storage of user content (Topics, Items, Filters, Reminders)</p>
+<p>Cloud Storage: Storage of uploaded files (PDFs, images, documents)</p>
+<p>Cloud Functions: Server-side business logic (e.g. email import, thumbnail generation)</p>
+<p>Firebase Cloud Messaging: Delivery of push notifications (device tokens, i.e. delivery addresses of your device for push messages)</p>
+<p>Firebase App Check: Protection of the server APIs (the programming interfaces through which the App talks to our servers) against unauthorized access (device attestation tokens, proofs that a request comes from a genuine 4later app)</p>
+
+<p>Device and Installation Data: When the App launches and when it returns to the foreground, the following data is transmitted for each device you use to our servers (Firebase, europe-west1) and stored under your user ID: a random device-internal installation identifier (Firebase Installations ID), app version, operating system version, hardware model, platform (iPhone/iPad/Mac), language, timezone, the push notification token, whether you have allowed notifications and calendar access for the app (only the permission state, no calendar contents), how long and how often you used the App and its extensions per day (only daily totals of usage time and the number of sessions per device, no content, no screens visited), which 4later widgets are set up on the device (only the number per kind, i.e. due, unread or topic, and per size; no topics, no titles, no content) and how often per day you tapped the 4later widgets and Control Center buttons (only daily counters per kind of tap, e.g. "due list opened" or "voice memo button"; no content, no topics), on which days the App asked you for an App Store rating and at which kind of moment (only a daily counter per kind, e.g. "first processed entry viewed"; whether and how you rated is not known to us, Apple does not share it), how often per day the "connection problem" screen appeared at launch and how often you tapped "Try again" on it (only daily counters, no error details), the distribution channel of the App (App Store or TestFlight), and the country of your App Store account (storefront, e.g. "Germany" – this is NOT location tracking, but the country setting of your Apple account). Purpose: correct localization of reminders and maintenance jobs to your timezone (performance of contract, Art. 6(1)(b) GDPR), delivery of push notifications (performance of contract), diagnosis of errors, and usage-based improvement of the App (legitimate interest, Art. 6(1)(f) GDPR). Retention: until account deletion; devices inactive for more than 12 months are automatically removed. You can see the list of your devices (model, platform, last used) in the App under Settings &gt; User account &gt; Connected devices, and remove the entry of another device there.</p>
+
+<p>Subscription Status: Your current subscription tier (e.g. "Premium Monthly") and the current renewal date are stored in your account to provide your feature scope across all your devices. If several 4later accounts use the subscription of the same Apple ID, we store per subscription which accounts are currently using it and when they last used it, in order to enforce the permitted number per plan (performance of the contract, Art. 6(1)(b) GDPR). A subscription may also reach us through Apple's Family Sharing, that is, shared with you by a different Apple ID. We then process the same details as otherwise, namely the transaction identifier, the tier and the expiry date; Apple does not tell us who shared it or who else belongs to the family.</p>
+
+<p>Entry Source per Item: For each stored item, we record how the item was created (e.g. in-app entry, share extension, action extension, email import, folder import, clipboard paste, AI assistant, connected external assistant). Purpose: improvement of input pathways.</p>
+
+<p>Internal Diagnostic Statistics: For diagnosis and maintenance, we store statistics about internal cron jobs (number of processed entries, duration, any errors) for up to 12 months, as well as daily anonymized usage aggregates (daily statistics) indefinitely.</p>
+
+<p>The App does NOT use analytics or tracking services. We do not use Firebase Analytics, Crashlytics, advertising IDs, or browser fingerprinting. No location data, contact data, or health data is collected.</p>
+
+
+<h2>5. Storage Duration and Deletion</h2>
+
+<p>Your personal data will be stored for as long as is necessary for the provision of our services. You have the option to delete your user account and all associated data at any time via the App settings.</p>
+
+<p>Content moved to the bin is automatically deleted after a user-configurable period (from immediate to 1 year).</p>
+
+<p>Deletion of unused accounts: If a user account is not used for 12 months, meaning there is neither a sign-in nor any use of the App with that account during that time, we delete the account together with all of its content. We announce the deletion beforehand: we send three notices to the account's email address, about 30, 14 and 3 days before the deletion date. For a Sign in with Apple account with a hidden email address, the notices go to the address Apple forwards. To prevent the deletion, it is enough to sign in to the App once before that date; the notices deliberately contain no link for this. Accounts with a running subscription are not deleted this way. If a subscription has ended, the 12 months start no earlier than its end date. Whether you have a subscription or use the App free of charge has no effect on this period; what matters is solely whether the account is used. Shared topics owned by the account are deleted as well, with all their entries, including those of other members; the notices say so explicitly. Before the deletion we store a copy of the account in non-public storage in the EU (Google Cloud Storage) and keep it for 1 year, so that we can restore the account at your request; after that, this copy is deleted as well. The legal basis is our legitimate interest in not keeping data longer than necessary (Art. 6(1)(f) in conjunction with Art. 5(1)(e) GDPR).</p>
+
+<p>If you uninstall the App without first deleting your user account, your data will remain stored in our cloud database (Google Firestore and Cloud Storage).</p>
+
+
+<h2>6. Specific Data Protection Features of 4later</h2>
+
+<p>6.1 Data Transmission and Security:</p>
+<p>All data transmissions between the App and our server services are TLS-encrypted.</p>
+<p>The App does not store sensitive personal information locally outside the user's device sandbox.</p>
+
+<p>6.2 Anonymous Legacy Accounts:</p>
+<p>Users who still use the App anonymously from the earlier testing phase (Section 2.2) can link their data to an Apple or Google account at any time; all content is preserved.</p>
+
+<p>6.3 Data Security:</p>
+<p>4later UG (haftungsbeschränkt) takes all necessary technical and organizational measures to ensure data security. Documentation of the technical and organizational measures (TOM) pursuant to Art. 32 GDPR is available upon request.</p>
+
+<p>6.4 Spotlight Indexing (iOS System Search):</p>
+<p>If you have enabled "Findable in Spotlight" in the App settings (default: enabled), 4later makes the following content of your entries available to the iOS Spotlight search on your device: title, notes, AI summaries, the title, file name and AI summary of attachments, and the name of the parent topic. If an attachment has a cached thumbnail image, this is also provided. This covers your own entries and entries from topics shared with you. 4later itself does not read this search index and does not transmit it to our servers. If you use Siri or Apple Intelligence, Apple may use this content to answer your requests (see section 6.7). You can disable the feature at any time in the 4later settings or in iOS under Settings &gt; Siri \&amp; Search &gt; 4later; the index on the device is then cleared.</p>
+
+<p>6.5 On-Device Processing of Voice Memos:</p>
+<p>Transcription of voice recordings (audio items) is performed exclusively on your device (Apple SpeechAnalyzer). The audio content of voice-memo items is not transmitted to our servers or to Google Gemini for this purpose. The audio track of video attachments is an exception and is processed as part of AI video analysis (see Section 7).</p>
+
+
+<p>6.6 Shared Topics (Topic Sharing):</p>
+<p>Topics can be shared with other 4later users. The following applies:</p>
+<p>- Visibility of profile data: When sharing or joining, your profile name, your profile picture (if set), and your role (owner, editor, or viewer) become visible to all members of the topic – live: if you change your name or picture, the other members immediately see the current version. There is no setting to hide your name or picture from members – anyone participating in shared topics always shows the other participants their current profile name and profile picture. A profile name is required for sharing and joining. Members can also see each member's join date. Technical note: your profile record (name and picture) can be retrieved by signed-in 4later users who know your user ID – in practice, these are your fellow members in shared topics; browsing or listing all profiles is technically prevented.</p>
+<p>- Invitation and join request: Joining happens via an invitation link and a join request that the owner approves or declines. Your profile name is transmitted to the owner together with the request. When the owner shares the invitation link, the link preview shows every recipient of the link the owner's profile name, the topic title, and the number of entries.</p>
+<p>- Shared content: Items, attachments, titles, notes, and AI summaries of a shared topic are visible to all members according to their role. Server-side AI analysis (Section 7) also processes content contributed by other members.</p>
+<p>- Read status: For shared topics, your personal read status per item is stored in your own user area. The owner of a shared topic can see whether individual members have read an item. The app points this out before you join. Members cannot see each other's read status.</p>
+<p>- Leaving and removal: When you leave a shared topic or are removed by the owner, your access to the topic ends. Your personal read marks remain in your user area (and apply again if you rejoin); they are deleted when your account is deleted.</p>
+<p>- Deletion of shared topics: If the owner deletes or archives a shared topic, or deletes their account, sharing ends; the topic and its contents are deleted according to the rules in Section 5 and are no longer accessible to any member.</p>
+<p>- Reporting content: Members of a shared topic can report an item they consider objectionable (reasons: objectionable content, harassment, other, each with optional free text). We then store your user identifier, the topic owner's user identifier, the identifiers of the topic and the item, the selected reason, your free text, and the time and processing status — on our servers (Firebase, europe-west1). The reported person does not learn who filed the report. Reports are deliberately NOT subject to an automatic deletion period, so that a case remains traceable during and after handling; they are deleted once they are no longer required for handling and any evidentiary purposes. For handling, a notification is posted to an internal channel of the 4later team (Slack, see Section 7). The legal basis is Art. 6(1)(f) GDPR (legitimate interest in preventing abuse and in meeting platform requirements for user-generated content).</p>
+
+<p>6.7 Siri, Shortcuts and Apple Intelligence:</p>
+<p>4later offers shortcuts for Siri and the Shortcuts app, for example saving an entry, recording a voice memo, asking 4later a question, or counting due and unread entries. From iOS 27, Siri with Apple Intelligence can also create, change, move, open and search entries in 4later.</p>
+<p>- What Apple processes: Apple processes your voice input and the execution of Siri and Apple Intelligence, depending on the request on your device, on Apple servers or in Apple's Private Cloud Compute. Apple's privacy information applies (https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/ and https://www.apple.com/legal/privacy/data/en/intelligence-engine/). 4later receives no audio recording of your voice input, only the recognized text of the request.</p>
+<p>- What 4later returns to Siri: a short confirmation, a count, or the answer to your question. So that Siri can find, change or show you an entry, 4later provides matching entries on request (title, notes, topic, flag, reminder date, done status and links), including entries from topics shared with you, as well as the entry currently on screen.</p>
+<p>- What reaches our servers: An entry created or changed through Siri is stored and processed exactly like one typed in the App (sections 3, 4 and 7), including the input source "shortcut". A question to 4later is processed like a message to the AI assistant (section 7, AI assistant) and saved with its answer in your chat history.</p>
+<p>You can turn off Siri for 4later at any time in iOS under Settings &gt; Siri &gt; Apps &gt; 4later. The legal basis for the processing on our side is Art. 6(1)(b) GDPR (provision of the feature you invoked).</p>
+
+<p>6.8 Widgets and Control Center:</p>
+<p>4later offers widgets for the Home Screen and the Lock Screen as well as controls for Control Center. They are optional: you add them yourself in iOS and can remove them there at any time.</p>
+<p>- What the widgets show: depending on your choice, due or unread entries or the latest entries of a topic, each with its title, topic name, reminder time and the count. This also applies to entries from topics shared with you.</p>
+<p>- Where this data is kept: For this purpose the App stores a small file with these details in a protected area on your device that only 4later and its widgets can access. The entries, titles and topics a widget shows do not leave your device for this. iOS displays them.</p>
+<p>- Usage statistics: So that we can see whether and how the widgets are used, we transmit per device only how many widgets of which kind (due, unread, topic) and size are set up, and how often per day a widget or one of the Control Center buttons was tapped (daily counters per kind of tap). Content, titles and topics are not part of it. This information is part of the device and installation data (section 4) and follows its purpose, legal basis (legitimate interest, Art. 6(1)(f) GDPR) and retention; we keep the daily counters per device for the last 14 days. Nothing is transmitted to third parties.</p>
+<p>- Visibility: Depending on your iOS settings, the content of a widget on the Lock Screen may be visible while the device is locked. You decide in the iOS settings whether widgets are shown while the device is locked.</p>
+<p>- Signing out and account lock: If you sign out or the account is locked, the App removes the titles from this file; the widgets then no longer show any entries.</p>
+<p>The controls in Control Center only open the App (new entry, voice memo, question to 4later) and show no content. The legal basis is Art. 6(1)(b) GDPR (provision of the feature you set up).</p>
+
+<p>6.9 Folder import (iCloud Drive and Dropbox):</p>
+<p>With the folder import, files that you (or a scanner on your behalf) put into a specific folder automatically become entries in 4later. There are two ways; both are optional, and you switch each on and off in the settings under "Import" (rows "iCloud Drive" and "Dropbox"). Only PDF files and images (JPEG, PNG, HEIC) are imported. Each way puts its entries into a topic you choose for it; without a choice, into the "4later" topic.</p>
+<p>- iCloud Drive: The App creates the folder "4later/Import" in your iCloud Drive. The App reads the files in it on your device while the App is open and uploads them to our servers like an attachment you picked yourself (Sections 3 and 4). Before the App imports a file, it asks our server, sending the file's fingerprint and size (see "Protection against duplicate entries"), whether the file is new and whether your monthly allowance still has room. The files stay in your own iCloud account with Apple; 4later gets no access to your iCloud account and transmits nothing to Apple. So that the folder is used by only one 4later account, the App places a small file next to the folder holding a check value derived from your user ID (no user ID in plain text, no name).</p>
+<p>- Dropbox: To connect your Dropbox account, you sign in with Dropbox and allow the app "4later Import" access. This permission covers only the folder "Apps/4later Import" in your Dropbox, not your other files; it includes reading the files in this folder and deleting imported files (see below). When Dropbox notifies our server of a change in this folder, our server (Cloud Functions, europe-west1) downloads the new files directly from Dropbox and stores them as entries; your device does not need to be switched on for this. After an import you receive a notification. For this we store: the access key issued by Dropbox (encrypted; the key for it is kept separately in a protected key store), the account ID of your Dropbox account, a position marker up to which the folder has been read, as well as the folder, the time of connection and of the last sync, and the status of the connection. We do not request the name or email address of your Dropbox account. A Dropbox account can be connected to only one 4later account.</p>
+<p>- Monthly allowance: For each way, a number of imports per calendar month may apply per plan; the App shows in Settings how many are left this month. Once the allowance is used up, the file stays in the folder and is imported the following month.</p>
+<p>- Delete file after import: For each way there is the switch "Delete file after import", which is on to begin with. A file is then deleted only after it has been completely stored in 4later, never on an error and never a file that was already imported once. In iCloud Drive it goes to "Recently Deleted" (recoverable there for 30 days); in Dropbox it is deleted under Dropbox's rules and can be restored there for the period your Dropbox plan provides. If the switch is off, the file stays unchanged.</p>
+<p>- Protection against duplicate entries: So that the same file is never imported twice, not even after a reinstall or across both ways, we keep one shared register of imported files per account. For each file it holds a fingerprint (a SHA-256 check value over the file content, from which the content cannot be recovered), the source (iCloud Drive or Dropbox), the file size, the time, the month of the import for the allowance and the resulting entry with its topic; for Dropbox also the check value Dropbox states for the file. File names and contents are not part of it. If you delete an imported entry, its fingerprint remains so that the file does not come in again.</p>
+<p>- Further processing: Imported files are then handled like any other attachment, including the AI analysis (Section 7, Google Gemini).</p>
+<p>- Disconnecting and deletion: If you switch the iCloud import off, the App no longer reads the folder; the files in it remain untouched. If you disconnect Dropbox in the App, we revoke the access key at Dropbox (if that does not succeed at once, we retry the revocation for up to 30 days) and delete the stored connection data; you can also remove the access yourself in your Dropbox settings under "Connected apps". If you delete your 4later account, we delete the register of fingerprints and the connection data; we revoke the access key at Dropbox in the process and, if that does not succeed at once, retry the revocation for up to 30 days. The imported entries themselves follow the rules in Section 5.</p>
+<p>The legal basis is Art. 6(1)(b) GDPR (provision of the feature you switched on). For Dropbox as a provider, see Section 7.</p>
+
+<h2>7. Integration of Third-Party Services and APIs</h2>
+
+<p>Our App integrates various services to provide enhanced functionality:</p>
+
+<p>Slack (Salesforce): When an abuse report is filed (Section 6.6), our server posts a notification to an internal, non-public channel of the 4later team on Slack. That notification contains no names, no content and no user identifiers — only the type of report and an internal incident number that can be linked to the case solely within our internal processing system. Profile names, user identifiers, the topic title and the report's free text remain exclusively on our servers (Firebase, europe-west1). Slack is a service of Salesforce, Inc.; processing outside the EU cannot be ruled out; it is safeguarded by the Data Processing Addendum concluded with Salesforce, including the EU Standard Contractual Clauses. No other feature of the App transmits data to Slack.</p>
+
+<p>YouTube Data API (Google): Enables retrieval of public metadata for YouTube videos (title, description, thumbnails). Only the public video ID is transmitted to the YouTube API — no personal data. The request is made server-side from our Cloud Function in europe-west1.</p>
+
+<p>Mailgun (Sinch): The App offers an optional email import feature where emails can be forwarded to a personal 4later address. Incoming email processing is handled by Mailgun (Sinch Email) in the EU region Frankfurt. Email content and attachments are stored by Mailgun for a maximum of 7 days and then automatically deleted. If large attachments are sent by Apple Mail as an iCloud link (Mail Drop), our server retrieves these attachments from Apple's iCloud servers for storage. A rate limit of 50 emails per day per user applies for abuse protection. If you request an export of your data in the App, we send you an email via Mailgun with a link to a retrieval page (valid for 14 days). Retrieval requires a PIN that is only shown in the App and never sent by email; the actual download link is valid for 15 minutes after the PIN has been entered. When we announce the deletion of an unused account (Section 5), we send the notices via Mailgun as well; the same goes for the security notices sent when an AI assistant is newly connected to your account (see "Connecting External AI Assistants"). If a forwarded email cannot be saved, for example because the monthly quota is used up, email import is not part of your plan or your storage is full, we send you a short email about it to the address of your account, at most once a month per reason, also via Mailgun. If one of these emails cannot be delivered or is reported as spam, Mailgun informs us. We store the type of report, the reason, the time, your user ID and your email address only as a non-reversible hash (SHA-256), so that we can answer questions such as "I never received a message". This information is deleted automatically after 180 days. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in demonstrably reliable delivery). Mailgun acts as a data processor in accordance with Art. 28 GDPR with Standard Contractual Clauses (SCCs). Certifications: SOC 2 Type II, ISO 27001. Data Protection Officer: DPO@sinch.com.</p>
+
+<p>Google Gemini: The App uses the Google Gemini API (part of the Gemini Enterprise Agent Platform, formerly Vertex AI) to automatically analyze attachment content (e.g. PDFs, images, documents, and videos). For video attachments, both the visual content and the video's audio track are analyzed to generate a title and description. Content is sent to the Google Gemini API to generate automatic summaries and descriptions. For saved web links, the App additionally captures a snapshot of the page content on your device at save time and uploads it to your entry; if the page is later unreachable for our server (e.g. requires a login), the summary is generated from this snapshot. If you tap “Use as preview” in the built-in browser, the App additionally uploads an image of the page currently shown as the preview image and its text as a snapshot, even if you are signed in on that page; the summary is regenerated from it. In shared topics, all members see this image and summary. The App also uses Google Gemini for automatic topic filing: a description of each topic is derived from its contents, each entry is assessed as to whether it fits its topic, and given a clear recommendation the entry is automatically filed into the matching topic (can be disabled in the settings). For this purpose, the titles and notes of your entries, AI summaries, and the titles and descriptions of your topics are processed. Processing takes place in the EU multi-region. In accordance with Google Cloud Terms of Service, Google does not use this data to train AI models. A zero data retention policy applies, meaning customer data is not permanently stored after processing. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in providing intelligent app features).</p>
+
+<p>AI Assistant (Chat): The App offers an optional AI assistant (a large language model, LLM) that lets you ask questions about your saved items in natural language. To answer your question and find matching items, your chat message, the prior conversation, and relevant content of your items (e.g. titles, notes, AI summaries, and selected attachment content) are sent to the Google Gemini API (EU multi-region). The same conditions apply as for attachment analysis (no use for model training, zero data retention). The legal basis is Art. 6(1)(f) GDPR. Google does not store your queries or the responses. We store your chat history in your account so that you can find it again on your devices; this also applies to questions you ask 4later through Siri (section 6.7). You can delete individual conversations in the App; deleting your account deletes the entire history. We count your queries for the monthly allowance of your plan; beyond that, only anonymous usage counters are collected for improvement and abuse prevention.</p>
+
+<p>Semantic search (embeddings): So that the AI assistant and an external assistant you have connected (MCP interface) can find items even when your question uses different words than the item, our server computes an embedding vector for each item: a sequence of numbers that represents the meaning of the text. For this, the item's title, notes and AI summary, the titles and AI summaries of up to five attachments, and the topic title are sent to the Google Gemini API (embedding model, EU multi-region); file names and file contents are not included. The same conditions apply as for attachment analysis (no use for model training, zero data retention). We store the vector on our servers with the respective topic (Firebase, europe-west1); the original text cannot be recovered from it, and neither apps nor connected assistants can read it. It is recomputed when the item's content changes and deleted together with the item (including when the bin is emptied and when the topic or your account is deleted). The legal basis is Art. 6(1)(f) GDPR (legitimate interest in accurate search within your own content).</p>
+
+<p>Connecting External AI Assistants (MCP interface): You can connect your own AI assistant (e.g. Claude by Anthropic or ChatGPT by OpenAI) to your 4later data via a secure interface (MCP, the Model Context Protocol, an open standard through which AI assistants access data; OAuth 2.1, a standard for granting access without handing over your password). The connection is established exclusively by you: during the connection flow, you sign in with your Apple or Google account and explicitly authorize the access. The connected assistant can then search (by keywords and by meaning, see "Semantic search") and read your entries (topics, titles, notes, AI summaries, attachments via short-lived download links, and, on request, your AI chat history). If you explicitly also allow writing when connecting (the "Write" box on the confirmation page), the assistant can change your entries on your behalf largely the way you can in the App: create new entries, also with attachments (files, links or text), in the "4later" topic or in a topic you name; edit entries (title, note, reminder, flag), mark them done or open again, read or unread; move or copy entries to another topic, split and combine them; archive entries and bring them back from the archive, put them in the bin and restore them, and permanently delete entries that are already in the bin or the archive; add, edit, reorder, move or copy attachments to another entry, turn an attachment into its own entry and permanently delete attachments; start the AI analysis of an entry or attachment again and answer a topic suggestion of the AI. Anything permanently deleted cannot be restored; this also applies to deleted attachments and to entries that are merged into another entry when combining. In shared topics, the same rights of your role apply as in the App. Not possible through the interface: creating, renaming or deleting topics (except the one new topic the AI itself proposed for an entry, if you accept that suggestion), sharing (inviting people, changing roles, removing members, leaving a shared topic), rescanning QR codes and a general undo. To protect against accidental mass changes, a daily maximum number of changes applies. Without the write permission the connection stays limited to reading; a connection granted for reading only does not gain writing later by itself, it has to be connected again for that. We instruct the assistant to make changes only on your explicit instruction; whether it additionally asks for confirmation before a change depends on the settings of your AI assistant; what it creates carries the entry source "Connected assistant" (section 4) and is visible to the other members of a shared topic. We keep a log of every change in your account (time, connected service, kind of change, short-form title, topic, outcome; the full text of an entry is not kept in the log after the change was made). The log is part of your data export (section 8) and is deleted by the next nightly cleanup run 30 days after the respective entry, at the latest with your account. Important: content retrieved by your AI assistant is transmitted to its provider and processed there under that provider's own privacy policy – depending on the provider, also outside the EU (e.g. USA). 4later has no influence on this processing; please consult the privacy policy of your AI provider. You can disconnect at any time with your AI provider or in the App under Settings &gt; User account &gt; Connected connectors; the assistant can still use an access token already issued for up to 60 minutes, until it expires. If unused, the connection expires by itself at the latest 30 days after its latest renewal (each time it is used, the assistant automatically obtains a new access token valid for only 60 minutes; that is the renewal). For each connection we store on our servers (Firebase, europe-west1) the identifier and name of the connected app, the permitted access (read only, or read and change), the time of connecting and of the latest renewal, and the access key only as a non-reversible hash; this information is deleted when you disconnect and when your account is deleted; without use it is kept for at most 30 days after the latest renewal and is then deleted by the next nightly cleanup run, usually the following day. Security notices: when an AI assistant is newly connected to your account, we send you an email to the address of your account (via Mailgun) and a notification to your devices. It names the app, the permitted access and the time; no IP addresses and no location are collected for it. The purpose is to protect your account against access you did not allow yourself; the data processed for it are the app name, the access level, the time and the email address of your account. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the security of your account). These notices cannot be switched off; the notification on the device follows your notification setting. So that an app connected several times in quick succession triggers only one notice, we remember for up to 10 minutes for which app a notice was sent.</p>
+
+<p>Website Screenshots and Email Rendering (self-hosted service): To generate preview images for saved web links and to render the content of incoming forwarded emails as a PDF attachment, 4later UG (haftungsbeschränkt) operates its own Browserless service (Headless Chromium) on Google Cloud Run in the EU region (europe-west1). Processed data: URLs of saved web links, and the HTML or plaintext content of forwarded emails including embedded images (Content-ID). Processing takes place exclusively on our own infrastructure. No data is shared with external third parties. Generated preview images and PDF renderings are stored in Google Cloud Storage (EU).</p>
+
+<p>Google Sign-In (Google Ireland Limited): Optional authentication via Google account. Google email address, display name, and profile picture URL are transmitted. Processing occurs via Firebase Auth in the EU.</p>
+
+<p>Apple services: The App uses the following Apple services, processed under the Apple Developer DPA and the EU-US Data Privacy Framework:</p>
+
+<p>– Apple Sign-In: Optional authentication via Apple ID (optionally with Private Relay for the email address).</p>
+<p>– Apple Push Notification Service (APNS): Delivery of push notifications (device tokens, USA).</p>
+<p>– App Attest / DeviceCheck: Device attestation for Firebase App Check (no personal data).</p>
+<p>– StoreKit: Management of in-app purchases and subscriptions (transaction IDs).</p>
+<p>– EventKit: Optional local synchronization of reminders with the Apple Calendar (happens exclusively on-device; no server transfer by us).</p>
+<p>– Siri and App Intents: execution of shortcuts and Siri requests to 4later (see section 6.7).</p>
+<p>– MapKit (Apple Maps): for a saved Apple Maps or Google Maps link, the App draws the preview map on your device. To do so, it loads the map section around the place in the link from Apple (the coordinates of that place; no user ID, no other content). This happens only when such a link is displayed; it is not your own location.</p>
+
+<p>Dropbox (Dropbox, Inc., USA): If you connect your Dropbox account in the folder import (Section 6.9), our server fetches the files from the app folder "Apps/4later Import" through Dropbox's programming interface and, if you wish, deletes them there after the import. We transmit to Dropbox only what this requires: the access key, the folder's position marker, and the path and version of the files to be fetched or deleted. Dropbox notifies our server of changes in the folder; this notification contains only the ID of your Dropbox account. Dropbox is not our processor but the storage provider you chose yourself; the storage of your files in your Dropbox account is governed by your contract with Dropbox and its privacy policy (https://www.dropbox.com/privacy). The transfer of data to Dropbox, Inc. in the USA is based on the European Commission's adequacy decision for the EU-US Data Privacy Framework: Dropbox, Inc. is certified there (status "active", checked on October 6, 2026, https://www.dataprivacyframework.gov/participant/6495); Dropbox also names the EU Standard Contractual Clauses. No other feature of the App transmits data to Dropbox.</p>
+
+<p>Freshdesk (Freshworks Inc., USA): Optional support ticket system accessible via a link in the App settings. Upon use, Freshworks processes your submitted support requests (email address, name, ticket content) in the USA and India. The third-country transfer is secured by Standard Contractual Clauses (SCCs). Certifications: ISO 27001, SOC 2 Type II. Further information in the Freshworks privacy policy at https://www.freshworks.com/privacy/. Data Protection Officer: dpo@freshworks.com.</p>
+
+<p>Data collected through these APIs is subject to the respective privacy policies of the third-party providers. For more information, please consult the privacy policies of the respective third-party providers.</p>
+
+
+<h2>8. Your Rights</h2>
+
+<p>You have the right to access (Art. 15 GDPR), rectification (Art. 16 GDPR), deletion (Art. 17 GDPR), restriction of processing (Art. 18 GDPR), data portability (Art. 20 GDPR), and to object to processing (Art. 21 GDPR). To exercise your rights, please contact support@4laterapp.com.</p>
+
+<p>Furthermore, you have the right to lodge a complaint with a data protection supervisory authority if you believe that the processing of your personal data violates the GDPR. The supervisory authority responsible for us is the Bavarian State Office for Data Protection Supervision (BayLDA), Promenade 27, 91522 Ansbach, Germany.</p>
+
+
+<h2>9. Legal Basis for Processing</h2>
+
+<p>The processing of personal data is based on Art. 6(1) GDPR:</p>
+<p>(a) consent (e.g. for calendar access or sign-in with an Apple/Google account)</p>
+<p>(b) performance of a contract (e.g. provision of App features, synchronization, email import, folder import)</p>
+<p>(f) legitimate interest (e.g. ensuring technical functionality, AI content analysis, abuse prevention)</p>
+
+
+<h2>10. Terms and Conditions Reference</h2>
+
+<p>This Privacy Policy is part of our Terms and Conditions, which set out the legal basis for the use of our App. Please read them carefully to inform yourself about your rights and obligations when using our services.</p>
+
+
+<h2>11. Questions and Suggestions</h2>
+
+<p>If you have any questions or suggestions regarding data protection, we welcome your correspondence.</p>
+
+<p>4later UG (haftungsbeschränkt)</p>
+<p>Friedrich-Dürr-Straße 16</p>
+<p>85221 Dachau</p>
+<p>Germany</p>
+
+<p>Email: support@4laterapp.com</p>
+
+<h2>12. Glossary</h2>
+
+<p>The main technical terms of this policy, alphabetically:</p>
+
+<p>- AI assistant, LLM: A program that understands and produces language, backed by a large language model (LLM). In 4later this is the chat in the App; a "connected external assistant" is such a program from another provider, for example Claude or ChatGPT, that you connected to 4later yourself.</p>
+<p>- API (programming interface): The way the App talks to our servers. Every request from the App to the server goes through such an interface.</p>
+<p>- App Check: A protection by Google Firebase that verifies a request really comes from the 4later app and not from a foreign program.</p>
+<p>- Cloud Function: A program that runs on our servers at Google, not on your device. For example the summary of an attachment or the email import.</p>
+<p>- Cloud Storage: The file storage at Google where your attachments (images, PDFs, videos) are kept.</p>
+<p>- Device token: A delivery address that Apple or Google assign to your device so that push notifications reach it. It contains no personal details.</p>
+<p>- Download link, short-lived: A link to one of your files that becomes invalid after a few minutes, so nobody who obtains the link later can retrieve the file.</p>
+<p>- Embedding: A sequence of numbers that represents the meaning of a text. It lets the search find items even when your question uses different words.</p>
+<p>- EU multi-region: Data is stored mirrored at several locations within the EU so that it survives an outage; it does not leave the EU.</p>
+<p>- Firebase, Firestore: Firebase is the Google platform 4later runs on; Firestore is the database in it where your topics and items are stored.</p>
+<p>- Hash (SHA-256): A check value of fixed length computed from a content. The content cannot be recovered from it; it serves to recognise and compare.</p>
+<p>- MCP (Model Context Protocol): An open standard through which AI assistants access data and tools. It is how you connect an external assistant to 4later.</p>
+<p>- OAuth 2.1: A standard for giving a program access to your data without telling it your password. The access can be revoked at any time.</p>
+<p>- Push notification: A message the App shows on your device without being open, delivered via Apple or Google.</p>
+<p>- Spotlight: The system search of iOS, iPadOS and macOS. The App can make your items findable there.</p>
+<p>- TLS, AES-256: TLS encrypts data on its way between the App and the server; AES-256 encrypts it while it is stored.</p>
+<p>- Token (access token): A time-limited digital key with which a program accesses data within a granted permission. When it expires, the access ends.</p>
+<p>- Widget: A small window of the App on the Home or Lock Screen.</p>
+<p>- Zero data retention: A commitment by Google not to store content after the AI has processed it and not to use it for training.</p>
+<footer>
+<p>This page is generated from the version shipped in the app and is identical to it. Questions to <a href="mailto:support@4laterapp.com">support@4laterapp.com</a>.</p>
+</footer>
+</body>
+</html>
